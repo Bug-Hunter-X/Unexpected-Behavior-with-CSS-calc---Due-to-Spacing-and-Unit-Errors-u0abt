@@ -1,0 +1,12 @@
+/* Correct usage of calc() */
+#element {
+  width: calc(100% - 20px);
+  height: calc(50vh - 10px);
+  margin: calc(10px + 5%); /* Using different units is allowed if the result is mathematically meaningful */ 
+}
+
+/* Incorrect usage of calc() */
+/* #element {
+  width: calc( 100% - 20px ); /* Extra spaces around operators */
+  height: calc(50vh - 10em); /* Mixing incompatible units that result in meaningless value */
+} */
